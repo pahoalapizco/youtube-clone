@@ -1,0 +1,30 @@
+:root {
+  --menu-color: #202020;
+  --background-color: #181818;
+  --background-inputs-color: #121212;
+  --button-color: #313131;
+  --justy-withe: #ffffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--justy-withe);
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
