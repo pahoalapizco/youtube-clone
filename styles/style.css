@@ -76,7 +76,10 @@ header {
 .header-nav--search__button:hover,
 .header-nav--search__micro:hover,
 .option-button:hover,
-.option-image__user:hover {
+.option-image__user:hover,
+.header-nav--logo:hover,
+.video:hover,
+.header-nav div span i:hover {
   cursor: pointer;
 }
 
@@ -132,8 +135,8 @@ header {
   background-color: var(--menu-color);
   grid-area: sidebar;
   overflow-y: scroll;  
-  /* overscroll-behavior-y: contain; */
-  /* scroll-snap-type: y proximity; */
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y proximity;
 }
 
 .section-menu {
@@ -267,13 +270,13 @@ header {
   object-fit: contain;
 }
 
-.video-cover span {
+.video-cover .video-time {
   position: absolute;
   width: 50px;
   height: 30px;
   padding: 5px;
-  bottom: 10px;
-  right: 20px;
+  bottom: 15px;
+  right: 5px;
   font-size: 1.4rem;
   text-align: center;
   border-radius: 5px;
@@ -286,7 +289,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
-
 
 .video-detail img {
   margin: 0 20px;
@@ -319,4 +321,7 @@ header {
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 2.2rem;
+}
+.video-detail--titles span:nth-child(2):hover {
+  color: var(--justy-withe)
 }
