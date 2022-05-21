@@ -13,48 +13,49 @@
     <title>Youtube - Clon by Paho</title>
   </head>
   <body>
-    <div class="layout">
-      <header>
-        <nav class="header-nav">
-          <div class="header-nav--menu">
-            <span><i class="fa-solid fa-bars"></i></span>
-            <img
-              class="header-nav--logo"
-              src="./assets/img/logo.png"
-              alt=""
-              srcset=""
+    <header>
+      <nav class="header-nav">
+        <div class="header-nav--menu">
+          <span><i class="fa-solid fa-bars"></i></span>
+          <img
+            class="header-nav--logo"
+            src="./assets/img/logo.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div class="header-nav--search">
+          <form action="" class="header-nav--form">
+            <label for="search"></label>
+            <input
+              class="header-nav--search__input"
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Buscar"
+              autocomplete="off"
             />
-          </div>
-  
-          <div class="header-nav--search">
-            <form action="" class="header-nav--form">
-              <label for="search"></label>
-              <input
-                class="header-nav--search__input"
-                type="text"
-                name="search"
-                id="search"
-                placeholder="Buscar"
-                autocomplete="off"
-              />
-              <button class="header-nav--search__button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-  
-              <button class="header-nav--search__micro">
-                <i class="fa-solid fa-microphone"></i>
-              </button>
-            </form>
-          </div>
-  
-          <div class="header-nav--options">
-            <span class="option-button"><i class="fa-solid fa-video"></i></span>
-            <span class="option-button"><i class="fa-solid fa-table-cells"></i></span>
-            <span class="option-button"><i class="fa-solid fa-bell"></i></span>
-            <span class="option-image__user"> </span>
-          </div>
-        </nav>
-      </header>
+            <button class="header-nav--search__button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="header-nav--search__micro">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="header-nav--options">
+          <span class="option-button"><i class="fa-solid fa-video"></i></span>
+          <span class="option-button"><i class="fa-solid fa-table-cells"></i></span>
+          <span class="option-button"><i class="fa-solid fa-bell"></i></span>
+          <span class="option-image__user"> </span>
+        </div>
+      </nav>
+    </header>
+      
+    <div class="layout">
       <aside class="sidebar">
           <ul class="section-menu">
               <li>
@@ -124,13 +125,15 @@
               </li>
           </ul>
       </aside> 
-      <ul class="">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul class="tag-container">
+        <li class="tag--item tag--item__selected">Todo</li>
+        <li class="tag--item">Videojeugos</li>
+        <li class="tag--item">M&uacute;sica</li>
+        <li class="tag--item">En directo</li>
+        <li class="tag--item">Mixes</li>
+        <li class="tag--item">JavaScript</li>
+        <li class="tag--item">HTML</li>
+        <li class="tag--item">CSS</li>
       </ul>   
     </div>
   </body>
