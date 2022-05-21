@@ -1,18 +1,108 @@
 /* Header */
-
-.header-nav li span {
-  width: 24px;
-  height: 24px;
+header {
+  padding: 15px 20px;
+  height: 40vh;
+  background-color: var(--menu-color);
 }
 
-.header-nav--menu {  
-  columns: red;
-  background-image: url('../assets/icons/menu.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header-nav div span i {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.header-nav--menu {
+  height: 40px;
 }
 
 .header-nav--logo {
-  width: 97px;
-  height: 20px;
+  width: 150px;
+  height: 24px;
+  padding: 0 20px;
+  align-self: center;
 }
+
+.header-nav--form,
+.header-nav--menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.header-nav--search__input {
+  padding-left: 10px;
+  width: 500px;
+  height: 40px;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: var(--background-inputs-color);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.header-nav--search__button {  
+  width: 60px;
+  height: 40px;
+  font-size: 1.6rem;
+  border: none;
+  background-color: var(--button-color);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.header-nav--search__micro {
+  margin-left: 5px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: var(--justy-withe);
+  background-color: var(--background-inputs-color);
+}
+
+.header-nav--search__button:hover,
+.header-nav--search__micro:hover,
+.option-button:hover,
+.option-image__user:hover {
+  cursor: pointer;
+}
+
+.header-nav--search__button i {
+  color: var(--justy-withe);
+}
+
+.header-nav--options {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header-nav--options span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+
+.option-image__user {
+  width: 40px;
+  height: 40px;
+  background-image: url('https://www.gravatar.com/avatar/1768c857fe1fb54888c79eb7062da8cf?d=identicon');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.header-nav--options span i,
+.header-nav--menu span {
+  align-self: center;
+}
+
+/* Menú lateral */

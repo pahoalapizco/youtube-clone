@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://kit.fontawesome.com/af0bf7190a.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/af0bf7190a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Youtube - Clon by Paho</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="header-nav">
-            <li>
-                <span class="header-nav--menu"> </span> 
-            </li>
-            <li>
-                <!-- <span class="header-nav--logo">Logo</span> -->
-                <img class="header-nav--logo" src="./assets/img/logo.png" alt="Youtube logo" srcset="">
-            </li>
-            <li>
-                <input type="text" name="search" id="search" placeholder="Buscar">
-                <button>
-                    <span> search </span>
-                </button>
-            </li>
-            <li>
-                <button>
-                    <span> micro </span>
-                </button>
-            </li>
-            <li>
-               <span> video </span>
-            </li>
-            <li>
-                <span>grid </span>
-            </li>
-            <li>
-                <span>bell</span>
-            </li>
-            <li>
-                <span>user</span>
-                <img src="https://www.gravatar.com/avatar/1768c857fe1fb54888c79eb7062da8cf?d=identicon" alt="" srcset="">
-            </li>
-        </nav>
+      <nav class="header-nav">
+        <div class="header-nav--menu">
+          <span><i class="fa-solid fa-bars"></i></span>
+          <img
+            class="header-nav--logo"
+            src="./assets/img/logo.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div class="header-nav--search">
+          <form action="" class="header-nav--form">
+            <label for="search"></label>
+            <input
+              class="header-nav--search__input"
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Buscar"
+              autocomplete="off"
+            />
+            <button class="header-nav--search__button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="header-nav--search__micro">
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="header-nav--options">
+          <span class="option-button"><i class="fa-solid fa-video"></i></span>
+          <span class="option-button"><i class="fa-solid fa-table-cells"></i></span>
+          <span class="option-button"><i class="fa-solid fa-bell"></i></span>
+          <span class="option-image__user"> </span>
+        </div>
+      </nav>
     </header>
-</body>
+    <aside class="section-menu">
+        <ul>
+            <li>
+                <span> <i class="fa-solid fa-house"></i> Inicio </span>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul></ul>
+        <ul></ul>
+    </aside>    
+  </body>
 </html>
