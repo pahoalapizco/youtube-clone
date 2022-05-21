@@ -132,8 +132,8 @@ header {
   background-color: var(--menu-color);
   grid-area: sidebar;
   overflow-y: scroll;  
-  overscroll-behavior-y: contain;
-  scroll-snap-type: y proximity;
+  /* overscroll-behavior-y: contain; */
+  /* scroll-snap-type: y proximity; */
 }
 
 .section-menu {
@@ -146,13 +146,15 @@ header {
   border-bottom: 1px solid gray;
 }
 
-.section-menu::-webkit-scrollbar {
-  background-color: var(--background-inputs-color);
-  height: 3px;
+.sidebar::-webkit-scrollbar,
+.video-container::-webkit-scrollbar {
+  background-color: gray;
+  width: 3px;
 }
 
-.section-menu::-webkit-scrollbar-thumb {
-  background-color: var(--background-inputs-color);
+.sidebar::-webkit-scrollbar-thumb, 
+.video-container::-webkit-scrollbar-thumb {
+  background-color: var(--menu-color);
 }
 
 .section-menu li {
